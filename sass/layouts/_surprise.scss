@@ -1,0 +1,37 @@
+.surprise{
+    &__container{
+        height: 300px;
+        @include responsive(tabletl){
+            height: 250px;
+        }
+    }
+
+    &__swiper{
+        height: 100%;
+        &-item{
+            max-width: 182px;
+            min-width: 182px;
+
+
+        }
+        &-pic{
+            width: 150px;
+            height: 150px;
+        }
+        &-info{
+            position: relative;
+
+            min-height: 35%; 
+        }
+    }    &__pbar{
+        direction: ltr;
+        position: absolute;
+        bottom: 1.5rem;
+        height: .2rem;
+        &-p{            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+}

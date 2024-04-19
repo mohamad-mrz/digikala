@@ -1,0 +1,48 @@
+// ! --------------------------colors customization ------------------------
+// -------------------other colors ------------------------ : 
+$digi-green : #39ae00;
+$digi-border: #e0e0e2;
+
+
+// -----------------main colors------------------- :
+$digi-purple     :#941b80 ;
+$digi-red        :#ef4056;
+$digi-more       :#19adb2;      //$digi-more : #19bfd3;
+$digi-txt-gray   :#8d8f93;               //#62666d;
+$digi-txt-title  :#23254e;
+$digi-bg-gray    :#f0f0f1;
+
+
+$digi-colors :(
+  "digi-purple"   :$digi-purple,
+  "digi-red"      :$digi-red,
+  "digi-more"     :$digi-more,
+  "digi-txt-gray" :$digi-txt-gray,
+  "digi-txt-title":$digi-txt-title, 
+  "digi-bg-gray"  :$digi-bg-gray,
+
+  "digi-green"    :$digi-green,
+  "digi-border"   :$digi-border
+);
+
+$theme-colors:map-merge($theme-colors ,$digi-colors) ;
+
+//   !---------------------------fon-size customization --------------------------------------
+$font-size-subs:1.2rem;
+$font-size-m:1.5rem;
+$font-size-titles:2.1rem;
+
+
+// ! ----------------------------spacers customization --------------------------------------
+$spacers:(
+    0: 0,
+    1: $spacer * .5,
+    2: $spacer * 1,
+    3: $spacer * 1.5,
+    4: $spacer * 2,
+    5: $spacer * 2.5,
+  ) ;
+
+
+
+

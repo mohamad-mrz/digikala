@@ -1,0 +1,64 @@
+@mixin centerizetag($align : center , $justify : center){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+
+@mixin positioncenter(){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+@mixin ellipsis($lines){
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines; /* number of lines to show */
+            // line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+// ! phone   : 0 - 576px       : 36em
+// ! phonel  : 576 - 768px     : 48em
+// ! tablet  : 768 - 992px     : 62em
+// ! tabletl : 992 - 1200px    : 75em
+// ! laptop  : 1200 - 1800px   : 112.5em
+
+
+
+@mixin responsive($breakpoint){
+
+    // ********phone area : max =36em 
+    @if $breakpoint==phone {
+          @media only screen and (max-width:36em) {
+        @content;
+    }
+    }
+    // **********phone lanscape area : max=48em
+    @if &breakpoint == phonel {
+        @media only screen and (max-width:48em) {
+            @content;
+        }
+    }
+    // **********tablet area : max =62em
+    @if $breakpoint ==tablet {
+        @media only screen and (max-width:62em){
+            @content;
+        }
+    }
+    // *********tablet landscape area : max = 75em
+    @if $breakpoint ==tabletl {
+        @media only screen and (max-width :75em){
+            @content;
+        }
+    }
+
+    // **********laptop area : max =112.5em
+    @if $breakpoint==laptop {
+        @media only screen and (max-width : 112.5em){
+            @content;
+        }
+    }  
+}

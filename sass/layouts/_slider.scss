@@ -1,0 +1,30 @@
+.slider{
+    position: relative;
+    
+    &__item{
+        // min-height: 40rem;
+        height: 400px;
+
+        @include responsive(tabletl){
+            height: 300px;
+        }
+        @include responsive(tablet){
+            height: 268px;
+        }
+        img{
+            object-fit: cover;
+   
+            // z-index: 100;
+        }
+    }
+
+}
+.chevs{
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    width: 11rem;
+    @include responsive(phone){
+        display: none;
+    }
+}

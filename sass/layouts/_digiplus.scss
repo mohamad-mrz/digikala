@@ -1,0 +1,23 @@
+.digiplus{
+    &__member{
+        width: 40%;
+        background-image: url(../../public/images/digiplus-pic.png);
+        background-size: cover;
+        @include responsive(phonel){
+            width: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    &__products{
+        width: 60%;
+        @include responsive(phonel){
+            width: 100%;
+        }
+    }
+    &__btn{
+        width: 25%;
+    }
+
+
+}

@@ -1,0 +1,38 @@
+.suggestions{
+    &__title{}
+    &__items{
+        @include responsive(phonel){
+            display: none;
+
+        }
+        &-item{
+            width: calc(100% / 7);
+
+        }
+        &-pic{
+            width: 100px;
+            height: 100px;
+            @include responsive(tabletl){
+                width: 100%;
+                height: 100%;                
+            }
+        }
+    }
+    &__mobswiper{
+        display: none;
+        @include responsive(phonel){
+            display: block;
+        }
+    }
+    &__swiper{
+        // overflow: hidden;
+        &-item{
+            height: 260px;
+        }
+        &-pic{
+            width: 60px;
+            height: 60px;
+        }
+    }
+    
+}

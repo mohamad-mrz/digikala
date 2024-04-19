@@ -1,0 +1,34 @@
+.story{
+    &__image{
+        width: 84px;
+        height: 84px;
+        padding: .3rem;
+    }
+    &__info{
+        max-width: 84px;
+        span{
+
+        }
+    }
+    &__btn{
+        @include responsive(tablet){
+            display: none;
+        }
+    }
+}
+.swiper-slide{
+    cursor:pointer ;
+    // max-width: 84px;
+}
+
+.chev-left , .chev-right{
+    width: 4rem;
+    height: 4rem;
+    background-color: #fff;
+    
+    &::after{
+        font-size: 1.5rem;
+        color: $digi-txt-gray ;
+        font-weight: bold;
+    }
+}

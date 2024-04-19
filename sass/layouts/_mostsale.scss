@@ -1,0 +1,30 @@
+.mostsale{
+    &__header{
+        margin-right: 45%;
+        @include responsive(tabletl){
+            margin: 0;
+        }
+    }
+    &__content{
+        &-item{
+            
+            width: 315px;
+            height: auto;
+            margin-left: 20px;
+        }
+        &-pic{
+            width: 86px !important;
+            height: 86px !important;
+        }
+        &-txt{
+            h4{
+                font-size: 4rem;
+            }
+        }
+    }
+    &__btn{
+        @include responsive(phonel){
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.footer{
+    @include responsive(tablet){
+        display: none;
+    }
+    &__logo{}
+    &__linebetween{
+        width: 1.5px;
+        height: 2rem;
+        background-color: rgb(214, 214, 214);
+        // background-color: red;
+        border-radius: 2rem;
+    }
+    &__options{
+        padding: 0 15rem;
+    }
+
+    &__social{
+        &-logo{
+            font-size: 3rem;
+        }
+        input{
+            outline: none;
+            border: none;
+        }
+    }
+    &__dl{
+        &-apps{
+            img{
+                height: 44px;
+                object-fit: cover;
+            }
+            i{
+                font-size: 3.5rem;
+            }
+        }
+    }
+    &__txt{
+        &-namad{
+
+        }
+        &-info{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 5; /* number of lines to show */
+                    // line-clamp: 2; 
+            -webkit-box-orient: vertical;
+        }
+    }
+}
+.mobfooter{
+    // position: static;
+    bottom: 0;
+    span{
+        white-space: nowrap;
+    }
+}
+
+.ft{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    display: none;
+    @include responsive(phonel){
+        display: block;
+    }
+}

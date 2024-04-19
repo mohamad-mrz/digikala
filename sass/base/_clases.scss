@@ -1,0 +1,37 @@
+
+// ! ----------------------------------flex clases ------------------------------
+
+.flex-center {
+    @include centerizetag;
+}
+.flex-between{
+    @include centerizetag($justify:space-between);
+}
+
+
+// ! -----------------------------------position clases --------------------------
+.position-center {
+    @include positioncenter;
+}
+
+
+
+
+// !-----------------------------------font size clases ---------------------------
+.fs-1{
+    font-size: $font-size-subs !important;
+}
+.fs-2{
+    font-size: $font-size-m !important;
+}
+.fs-3{
+    font-size: $font-size-titles !important;
+}
+
+// !--------------------------------content line control----------------------------
+.ellipsis2{
+    @include ellipsis(2);
+}
+.ellipsis3{
+    @include ellipsis(3);
+}

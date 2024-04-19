@@ -1,0 +1,28 @@
+html {
+    font-size: 62.5%;
+    @include responsive(tabletl){
+        font-size: 50%;
+    }
+    @include responsive(phonel){
+        font-size: 50%;
+    }
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul , ol {
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    --bs-body-font-family : Iransans , sans-serif ;
+    --bs-body-font-weight :500;
+    --bs-body-color : black ;
+    --bs-body-bg: white ;
+    position: relative;
+}

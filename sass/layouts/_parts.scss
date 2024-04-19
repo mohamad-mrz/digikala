@@ -1,0 +1,25 @@
+.parts{
+    // padding: 0 10rem;
+    &__item{
+
+
+        img{
+            width: 52px;
+            height: 52px;
+        }
+    }
+    &__list{
+        display: flex;
+        @include responsive(laptop){
+        }
+        @include responsive(phonel){
+            display: grid;
+            grid-template-columns: repeat(4,3fr);
+            grid-row-gap: 2rem;
+            // grid-template-rows: repeat(2 , auto);
+        }
+    }
+}
+.gf{
+    // grid-area: 1/1/2/2;
+}

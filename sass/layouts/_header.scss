@@ -1,0 +1,57 @@
+.header{
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.3);
+    
+
+    &__banner{
+        img{
+            min-height: 60px;
+            object-fit: cover;
+            @include responsive (phone){
+                min-height: 40px;
+            }
+
+        }
+
+    }
+    &__logo{
+        @include  responsive(tablet){
+            display: none;
+        }
+    }
+    &__search{
+        width: 50%;
+        @include  responsive(tablet){
+            width: 100%;
+        }
+        input{
+            // width: 59rem;
+            width: 100%;
+            outline: none;
+
+        }
+    }
+    &__register{
+        white-space: nowrap;
+        @include  responsive(tablet){
+            display: none;
+        }
+    }
+    &__login{
+        white-space: nowrap;
+    }
+    &__line{
+        width: .1rem;
+        height: 3rem;
+    }
+    &__navbar{
+        @include  responsive(tablet){
+            display: none;
+        }
+        ul{
+            font-weight: 550;
+        }
+        i {
+            font-size: 1.5rem;
+        }
+    }
+}

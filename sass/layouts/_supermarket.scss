@@ -1,0 +1,62 @@
+.supermarket{
+    &__banner{
+        @include responsive(tablet){
+            flex-direction: column;
+        }
+    }
+    &__off{
+        span{
+            background-color: rgb(10, 152, 10);
+            @include responsive(tablet){
+                display: none;
+            }
+        }
+        &-pic1{
+            
+        } 
+        &-pic2{
+            @include responsive(phone){
+                width: 200px;
+            }
+        }
+    }
+    &__item{
+        width: 58px ;
+        height: 58px;
+        span{
+            height: 20px;
+            width: 34px;
+        }
+    }
+    &__more{
+        color: rgb(10, 152, 10);
+        height: 40px;
+        span{
+            @include responsive(tablet){
+                display: none;
+            }
+        }
+    }
+    &__poster{
+        @include responsive(tablet){
+            display: grid;
+            grid-template-columns: repeat(2 , 5fr);
+            row-gap: 1rem;
+        }
+        &-item{
+            width: calc(25% - 12px);
+            // height: 398px;
+            @include responsive (tabletl){
+                // width: calc(50% -12px);
+                width: calc(100% - 5px);
+            }
+        }
+    }
+}
+.limo{
+    @include responsive(phone){
+        display :none;
+    }
+
+}
+

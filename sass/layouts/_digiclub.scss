@@ -1,0 +1,19 @@
+.digiclub{
+
+    &__wheel{
+        width: 168px !important;
+        height: 60px;
+        @include responsive(phonel){
+            width: 120px;
+            height: 40px;
+        }
+    }
+    &__cats{
+        &-item{
+            @include responsive(tabletl){
+            border-bottom: 1px solid #dce1e6;
+        }
+        }
+
+    }
+}

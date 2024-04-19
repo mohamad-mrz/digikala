@@ -1,0 +1,25 @@
+.articles{
+    &__header{}
+    &__content{
+        @include responsive(phonel){
+            flex-direction: column;
+        }
+
+        &-item{
+            // height: 317px;
+            // line-height: 0;
+            width: calc(25% - 10px);
+            @include responsive(phonel){
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+
+
+}
